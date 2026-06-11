@@ -1,4 +1,4 @@
-"""Push the best local checkpoint to Hugging Face without retraining."""
+"""Push the best local checkpoint to Hugging Face without retraining.  """
 
 from __future__ import annotations
 
