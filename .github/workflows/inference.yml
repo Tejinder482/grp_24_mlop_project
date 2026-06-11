@@ -1,0 +1,24 @@
+name: Inference
+
+on:
+  workflow_dispatch:
+    inputs:
+      input_text:
+        description: "Movie review text to classify"
+        required: true
+        default: "This movie was fantastic and I would watch it again."
+
+jobs:
+  infer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_MODEL_NAME: ${{ vars.HF_MODEL_NAME }}
+          INPUT_TEXT: ${{ github.event.inputs.input_text }}
+        run: python src/inference.py

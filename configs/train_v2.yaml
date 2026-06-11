@@ -1,0 +1,10 @@
+model_name: distilbert-base-uncased
+epochs: 5
+batch_size: 32
+learning_rate: 2.0e-5
+version: v2
+run_name: run-v2
+max_length: 256
+wandb_project: mlops-assignment3
+data_dir: data/processed
+output_dir: results/v2

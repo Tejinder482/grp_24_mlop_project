@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+wandb/
+results/
+.ipynb_checkpoints/
+*.log
+
+# Processed datasets are generated locally and on Kaggle.
+data/processed/
+data/*.parquet
+data/*.csv
+
+# Model artifacts should live on Hugging Face Hub, not in git.
+models/
+checkpoints/
