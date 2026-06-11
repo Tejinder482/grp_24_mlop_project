@@ -1,4 +1,4 @@
-"""Run sentiment inference with a Hugging Face model.   """
+"""Run sentiment inference with a Hugging Face model. """
 
 from __future__ import annotations
 
