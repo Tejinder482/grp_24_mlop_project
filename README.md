@@ -149,13 +149,3 @@ docker push tejinder482/mlops-a3-inference:latest
 ## Model selection rationale (for report)
 
 We chose `distilbert-base-uncased` because it is a compact distilled version of BERT (~66M parameters, under the 200 MB assignment guideline). It is pretrained on English text and widely used for sentiment classification. Compared with larger models, it trains quickly on Kaggle's free GPU quota while still reaching strong accuracy on IMDB. The uncased tokenizer matches our lowercase preprocessing, and the Hugging Face model card documents proven performance on classification benchmarks.
-
-## Team checklist
-
-- [x] Public GitHub repo with all members as collaborators
-- [x] `develop` branch + protected `main`
-- [x] Two Kaggle training runs logged to W&B
-- [x] Best model pushed to public Hugging Face repo
-- [x] Docker image pushed to public registry
-- [x] Successful GitHub Actions inference run screenshot
-- [ ] 4–5 page PDF report with live links
