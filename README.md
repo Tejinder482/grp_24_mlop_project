@@ -138,7 +138,7 @@ docker push tejinder482/mlops-a3-inference:latest
 
 | Item | Link |
 |------|------|
-| GitHub Repository | https://github.com/Tejinder482/MLOPS_group_project |
+| GitHub Repository | https://github.com/Tejinder482/grp_24_mlop_project |
 | Kaggle Notebook v1 | https://www.kaggle.com/code/tejinder482/mlops-grp24-v1 |
 | Kaggle Notebook v2 | https://www.kaggle.com/code/tejinder482/mlops-grp24-v2 |
 | Hugging Face Model | https://huggingface.co/tejinder482/imdb-distilbert-best |
