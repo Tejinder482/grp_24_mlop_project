@@ -26,6 +26,7 @@ mlops-group-project/
 ├── src/
 │   ├── preprocess.py      # Clean IMDB data and write id2label.json
 │   ├── train.py           # Fine-tune DistilBERT with W&B logging
+│   ├── push_to_hub.py     # Push best checkpoint to Hugging Face Hub
 │   └── inference.py       # Run predictions from CLI / Docker / GitHub Actions
 ├── configs/
 │   ├── train_v1.yaml
@@ -133,7 +134,7 @@ docker push tejinder482/mlops-a3-inference:latest
 - **CI** (`ci.yml`) — runs `flake8` on push to `develop` and PRs to `main`
 - **Inference** (`inference.yml`) — manual dispatch with review text input
 
-## Submission links (update after Kaggle runs)
+## Submission links
 
 | Item | Link |
 |------|------|
@@ -141,8 +142,9 @@ docker push tejinder482/mlops-a3-inference:latest
 | Kaggle Notebook v1 | _paste public URL after upload_ |
 | Kaggle Notebook v2 | _paste public URL after upload_ |
 | Hugging Face Model | https://huggingface.co/tejinder482/imdb-distilbert-best |
-| Docker Image | _paste after Task 6_ |
-| W&B Dashboard | https://wandb.ai/tejinder482/mlops-assignment3 |
+| Docker Image | https://hub.docker.com/r/tejinder482/mlops-a3-inference |
+| W&B Dashboard | https://wandb.ai/tejindersingh2202-indian-institute-of-technology/mlops-assignment3 |
+| W&B Report | https://wandb.ai/tejindersingh2202-indian-institute-of-technology/mlops-assignment3/reports/MLOPS-Group-24---VmlldzoxNzE5OTYzNg |
 
 ## Model selection rationale (for report)
 
@@ -150,10 +152,10 @@ We chose `distilbert-base-uncased` because it is a compact distilled version of 
 
 ## Team checklist
 
-- [ ] Public GitHub repo with all members as collaborators
-- [ ] `develop` branch + protected `main`
-- [ ] Two Kaggle training runs logged to W&B
-- [ ] Best model pushed to public Hugging Face repo
-- [ ] Docker image pushed to public registry
-- [ ] Successful GitHub Actions inference run screenshot
+- [x] Public GitHub repo with all members as collaborators
+- [x] `develop` branch + protected `main`
+- [x] Two Kaggle training runs logged to W&B
+- [x] Best model pushed to public Hugging Face repo
+- [x] Docker image pushed to public registry
+- [x] Successful GitHub Actions inference run screenshot
 - [ ] 4–5 page PDF report with live links
