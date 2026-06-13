@@ -1,4 +1,4 @@
-"""Fine-tune DistilBERT on IMDB sentiment classification. """
+"""Fine-tune DistilBERT on IMDB sentiment classification."""
 
 from __future__ import annotations
 
